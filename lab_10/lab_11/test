@@ -1,0 +1,19 @@
+include def32.1nc
+include kerne!32.inc
+include user32.inc
+    .386
+    .model flat
+    .const
+hello_title     db "First Win32 GUI program", 0
+hello_message db "Hello wolrd!", 0
+.code
+_start:
+        push MB_ICONINFORMATION
+        push offset hello_title
+        push offset hello_message
+        push 0
+        call MessageBox
+
+        push 0
+        call ExitProcess
+ end    _start

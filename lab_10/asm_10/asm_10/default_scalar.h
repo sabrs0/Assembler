@@ -1,0 +1,1 @@
+float default_scalar(float* a, float* b, int n);

@@ -1,0 +1,1 @@
+float asm_scalar(float* a, float* b, float* cc, int n_help);
